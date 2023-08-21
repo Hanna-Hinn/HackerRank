@@ -1,4 +1,3 @@
-# Welcome to My HackerRank Solution Page
+# Welcome to My Problem-Solving Solution Page
 
-This Repository is made for HackerRank solutions
 

@@ -1,5 +1,4 @@
-# Welcome to HackerRank Solution Page
+# Welcome to My HackerRank Solution Page
 
 This Repository is made for HackerRank solutions
 
-In the Algorthims Warmup Course

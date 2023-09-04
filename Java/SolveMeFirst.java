@@ -18,12 +18,7 @@
 //Constraints:
 //1<=a,b<=1000
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 public class SolveMeFirst {
 
 
@@ -46,6 +41,7 @@ public class SolveMeFirst {
             b = in.nextInt();
             int sum;
             sum = solveMeFirst(a, b);
+            in.close();
             System.out.println(sum);
         }
         catch (Exception e){

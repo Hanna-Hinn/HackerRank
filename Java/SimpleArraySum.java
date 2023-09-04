@@ -24,17 +24,9 @@
 //
 //Print the sum of the array's elements as a single integer.
 
-
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
@@ -47,16 +39,16 @@ class Result {
      */
 
     public static int simpleArraySum(List<Integer> ar) {
-    // Write your code here
-    int sum=0;
-    if(ar.size() > 0){
-        for(int i =0;i<ar.size();i++){
-            if(ar.get(i) <= 1000){
-                sum+= ar.get(i);  
+        // Write your code here
+        int sum = 0;
+        if (ar.size() > 0) {
+            for (int i = 0; i < ar.size(); i++) {
+                if (ar.get(i) <= 1000) {
+                    sum += ar.get(i);
+                }
             }
         }
-    }
-    return sum;
+        return sum;
     }
 
 }
@@ -66,11 +58,11 @@ public class SimpleArraySum {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        int arCount = Integer.parseInt(bufferedReader.readLine().trim());
+        // int arCount = Integer.parseInt(bufferedReader.readLine().trim());
 
         List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+                .map(Integer::parseInt)
+                .collect(toList());
 
         int result = Result.simpleArraySum(ar);
 
